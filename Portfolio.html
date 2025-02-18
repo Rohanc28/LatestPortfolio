@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rohan Chaturvedi - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/inter-ui/3.19.3/inter.css">
+    <link rel="stylesheet" href="portfolio_style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .skill-tag {
+            background: rgba(255, 255, 255, 0.05);
+        }
+    </style>
+</head>
+
+<!--Body -->
+
+<body class="bg-black text-white min-h-screen">
+
+    <!-- SVG -->
+    <div class="background-container">
+        <!-- Insert the SVG here -->
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000"
+            style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; opacity: 0.1;">
+            <path id="wigglyPath">
+                <animate attributeName="d" dur="20s" repeatCount="indefinite" values="
+        M-100,500 Q100,400 200,500 T400,500 T600,500 T800,500 T1100,500;
+        M-100,500 Q100,600 200,500 T400,500 T600,500 T800,500 T1100,500;
+        M-100,500 Q100,400 200,500 T400,500 T600,500 T800,500 T1100,500
+      " />
+            </path>
+
+            <path id="wigglyPath2">
+                <animate attributeName="d" dur="15s" repeatCount="indefinite" values="
+        M-100,300 Q100,200 200,300 T400,300 T600,300 T800,300 T1100,300;
+        M-100,300 Q100,400 200,300 T400,300 T600,300 T800,300 T1100,300;
+        M-100,300 Q100,200 200,300 T400,300 T600,300 T800,300 T1100,300
+      " />
+            </path>
+
+            <path id="wigglyPath3">
+                <animate attributeName="d" dur="25s" repeatCount="indefinite" values="
+        M-100,700 Q100,600 200,700 T400,700 T600,700 T800,700 T1100,700;
+        M-100,700 Q100,800 200,700 T400,700 T600,700 T800,700 T1100,700;
+        M-100,700 Q100,600 200,700 T400,700 T600,700 T800,700 T1100,700
+      " />
+            </path> -->
+
+            <!-- Dash array animation for disintegration effect -->
+            <!-- <animate xlink:href="#wigglyPath" attributeName="stroke-dasharray" dur="10s" repeatCount="indefinite"
+                values="0,1000;10,90;20,80;30,70;40,60;50,50;1000,0" />
+
+            <animate xlink:href="#wigglyPath2" attributeName="stroke-dasharray" dur="15s" repeatCount="indefinite"
+                values="0,1000;10,90;20,80;30,70;40,60;50,50;1000,0" />
+
+            <animate xlink:href="#wigglyPath3" attributeName="stroke-dasharray" dur="20s" repeatCount="indefinite"
+                values="0,1000;10,90;20,80;30,70;40,60;50,50;1000,0" />
+
+            <style>
+                path {
+                    fill: none;
+                    stroke: #ffffff;
+                    stroke-width: 2;
+                }
+            </style>
+        </svg>
+    </div> -->
+
+    <!-- svg ends here-->
+    <div class="content-container">
+        <!-- Navigation -->
+        <nav class="border-b border-white/10 backdrop-blur-sm fixed w-full z-50">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="flex items-center h-14">
+                    <a href="#" class="text-lg font-medium">rohan.dev</a>
+                    <div class="ml-auto flex items-center space-x-6">
+                        <div class="flex items-center space-x-4">
+                            <a href="https://github.com/Rohanc28" target="_blank"
+                                class="text-gray-400 hover:text-white transition-colors">
+                                <i data-feather="github" class="w-5 h-5"></i>
+                            </a>
+                            <a href="https://linkedin.com/in/your-profile" target="_blank"
+                                class="text-gray-400 hover:text-white transition-colors">
+                                <i data-feather="linkedin" class="w-5 h-5"></i>
+                            </a>
+                            <a href="https://hackerrank.com/your-profile" target="_blank"
+                                class="text-gray-400 hover:text-white transition-colors">
+                                <i data-feather="code" class="w-5 h-5"></i>
+                            </a>
+                        </div>
+                        <div class="h-4 w-px bg-white/10"></div>
+                        <div class="space-x-6 text-sm text-gray-400">
+                            <a href="#experience" class="hover:text-white transition-colors">Experience</a>
+                            <a href="#projects" class="hover:text-white transition-colors">Projects</a>
+                            <a href="#contact" class="hover:text-white transition-colors">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="pt-32 pb-20 px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="max-w-3xl">
+                    <h1 class="text-5xl font-medium tracking-tight mb-4">Rohan Chaturvedi</h1>
+                    <p class="text-lg text-gray-400">SDE-1 @ Paymentus • Full Stack Developer</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="py-12 px-4">
+            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div class="card rounded-lg p-6">
+                    <h3 class="text-sm font-medium text-gray-400 mb-2">Experience</h3>
+                    <div class="text-2xl font-medium mb-1">2+ Years</div>
+                    <div class="text-sm text-gray-400">Payment Processing Systems</div>
+                </div>
+
+                <div class="card rounded-lg p-6">
+                    <h3 class="text-sm font-medium text-gray-400 mb-2">Education</h3>
+                    <div class="text-2xl font-medium mb-1">B.Tech CSE</div>
+                    <div class="text-sm text-gray-400">JUIT • 7.7 CGPA</div>
+                </div>
+
+                <div class="card rounded-lg p-6">
+                    <h3 class="text-sm font-medium text-gray-400 mb-2">Tech Stack</h3>
+                    <div class="text-2xl font-medium mb-1">Full Stack</div>
+                    <div class="text-sm text-gray-400">Java • Python • JavaScript</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Component -->
+        <section class="py-12 px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="flex items-center justify-between mb-6">
+                    <h2 class="text-2xl font-medium">Experience</h2>
+                    <span class="text-sm text-gray-400">Latest role</span>
+                </div>
+                <div class="card rounded-lg p-6 space-y-6">
+                    <div class="flex items-start justify-between">
+                        <div>
+                            <h3 class="text-lg font-medium">Software Development Engineer</h3>
+                            <p class="text-sm text-gray-400 mt-1">Paymentus</p>
+                        </div>
+                        <span class="text-sm text-gray-400">Jul 2023 - Present</span>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="card bg-white/[0.02] rounded-lg p-4">
+                            <h4 class="text-sm font-medium mb-2">Payment Processing</h4>
+                            <p class="text-sm text-gray-400">Built SOAP APIs using Express.js with Node.js middleware in
+                                Multi Payment channels</p>
+                        </div>
+                        <div class="card bg-white/[0.02] rounded-lg p-4">
+                            <h4 class="text-sm font-medium mb-2">Security Enhancement</h4>
+                            <p class="text-sm text-gray-400">Developed custom Python scripts for scanning and sanitizing
+                                sensitive information</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Component -->
+        <section class="py-12 px-4 bg-white/[0.02]">
+            <div class="max-w-6xl mx-auto">
+                <div class="flex items-center justify-between mb-6">
+                    <h2 class="text-2xl font-medium">Projects</h2>
+                    <span class="text-sm text-gray-400">Featured work</span>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="card rounded-lg p-6">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="p-2 bg-white/5 rounded-md">
+                                <i data-feather="layers" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <h3 class="font-medium">Fake News Detection</h3>
+                                <p class="text-sm text-gray-400">Deep Learning</p>
+                            </div>
+                        </div>
+                        <div class="space-y-2">
+                            <div class="flex items-center gap-2 text-sm text-gray-400">
+                                <i data-feather="git-branch" class="w-4 h-4"></i>
+                                <span>ISOT and FA-KES dataset</span>
+                            </div>
+                            <div class="flex items-center gap-2 text-sm text-gray-400">
+                                <i data-feather="calendar" class="w-4 h-4"></i>
+                                <span>Aug 2022 - Feb 2023</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more project cards as needed -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Component -->
+        <section class="py-12 px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="flex items-center justify-between mb-6">
+                    <h2 class="text-2xl font-medium">Skills</h2>
+                    <span class="text-sm text-gray-400">Tech stack</span>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="card rounded-lg p-6">
+                        <h3 class="text-sm font-medium text-gray-400 mb-4">Languages</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 rounded-md bg-white/5 text-sm">Python</span>
+                            <span class="px-2 py-1 rounded-md bg-white/5 text-sm">Java</span>
+                            <span class="px-2 py-1 rounded-md bg-white/5 text-sm">GoLang</span>
+                            <span class="px-2 py-1 rounded-md bg-white/5 text-sm">JavaScript</span>
+                            <span class="px-2 py-1 rounded-md bg-white/5 text-sm">C++</span>
+                        </div>
+                    </div>
+                    <div class="card rounded-lg p-6">
+                        <h3 class="text-sm font-medium text-gray-400 mb-4">Frameworks</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 rounded-md bg-white/5 text-sm">Springboot</span>
+                            <span class="px-2 py-1 rounded-md bg-white/5 text-sm">Django</span>
+                            <span class="px-2 py-1 rounded-md bg-white/5 text-sm">Node.js</span>
+                            <span class="px-2 py-1 rounded-md bg-white/5 text-sm">Express.js</span>
+                            <span class="px-2 py-1 rounded-md bg-white/5 text-sm">Flask</span>
+                        </div>
+                    </div>
+                    <div class="card rounded-lg p-6">
+                        <h3 class="text-sm font-medium text-gray-400 mb-4">Tools</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-2 py-1 rounded-md bg-white/5 text-sm">Docker</span>
+                            <span class="px-2 py-1 rounded-md bg-white/5 text-sm">AWS</span>
+                            <span class="px-2 py-1 rounded-md bg-white/5 text-sm">Git</span>
+                            <span class="px-2 py-1 rounded-md bg-white/5 text-sm">Jenkins</span>
+                            <span class="px-2 py-1 rounded-md bg-white/5 text-sm">Kubernetes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section id="contact" class="py-12 px-4">
+            <div class="max-w-6xl mx-auto">
+                <div class="card rounded-lg p-8 max-w-xl mx-auto">
+                    <h2 class="text-2xl font-medium mb-6">Get in touch</h2>
+                    <form action="mailto:rochaturvedi01@gmail.com" method="POST" enctype="text/plain">
+                        <div class="space-y-4">
+                            <div>
+                                <label class="text-sm font-medium text-gray-400 block mb-2">Name</label>
+                                <input type="text" name="name"
+                                    class="w-full px-4 py-2 rounded-md bg-white/5 border border-white/10 text-white focus:outline-none focus:ring-2 focus:ring-white/20"
+                                    required>
+                            </div>
+                            <div>
+                                <label class="text-sm font-medium text-gray-400 block mb-2">Email</label>
+                                <input type="email" name="email"
+                                    class="w-full px-4 py-2 rounded-md bg-white/5 border border-white/10 text-white focus:outline-none focus:ring-2 focus:ring-white/20"
+                                    required>
+                            </div>
+                            <div>
+                                <label class="text-sm font-medium text-gray-400 block mb-2">Message</label>
+                                <textarea name="message" rows="4"
+                                    class="w-full px-4 py-2 rounded-md bg-white/5 border border-white/10 text-white focus:outline-none focus:ring-2 focus:ring-white/20"
+                                    required></textarea>
+                            </div>
+                            <button type="submit"
+                                class="w-full bg-white text-black h-10 rounded-md font-medium hover:bg-gray-200 transition-colors">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quick Links -->
+        <section class="py-12 px-4 bg-white/[0.02]">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <a href="https://github.com/Rohanc28" target="_blank"
+                        class="card rounded-lg p-6 hover:bg-white/5 transition-colors">
+                        <div class="flex items-center space-x-4">
+                            <i data-feather="github" class="w-6 h-6"></i>
+                            <div>
+                                <h3 class="font-medium">GitHub</h3>
+                                <p class="text-sm text-gray-400">View my repositories</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/rohan-chaturvedi-b64b3b20a/" target="_blank"
+                        class="card rounded-lg p-6 hover:bg-white/5 transition-colors">
+                        <div class="flex items-center space-x-4">
+                            <i data-feather="linkedin" class="w-6 h-6"></i>
+                            <div>
+                                <h3 class="font-medium">LinkedIn</h3>
+                                <p class="text-sm text-gray-400">Connect with me</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.hackerrank.com/profile/Idevrutahc" target="_blank"
+                        class="card rounded-lg p-6 hover:bg-white/5 transition-colors">
+                        <div class="flex items-center space-x-4">
+                            <i data-feather="code" class="w-6 h-6"></i>
+                            <div>
+                                <h3 class="font-medium">HackerRank</h3>
+                                <p class="text-sm text-gray-400">Check my solutions</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            feather.replace();
+        </script>
+    </div>
+</body>
+
+</html>
