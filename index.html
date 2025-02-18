@@ -217,18 +217,88 @@
                                     <i data-feather="layers" class="w-5 h-5"></i>
                                 </div>
                                 <div>
-                                    <h3 class="font-medium">Fake News Detection</h3>
-                                    <p class="text-sm text-gray-400">Deep Learning</p>
+                                    <h3 class="font-medium">Fake News Detection Ensemble Model</h3>
+                                    <p class="text-sm text-gray-400">Fake News Detection using word vectorization
+                                        embeddings with CNN and RNN models ensemble.</p>
                                 </div>
                             </div>
                             <div class="space-y-2">
                                 <div class="flex items-center gap-2 text-sm text-gray-400">
                                     <i data-feather="git-branch" class="w-4 h-4"></i>
-                                    <span>ISOT and FA-KES dataset</span>
+                                    <span>Word2Vec, Tensorflow, Nlkt, Gensim, SKlearn, ISOT and FA-KES dataset</span>
                                 </div>
                                 <div class="flex items-center gap-2 text-sm text-gray-400">
                                     <i data-feather="calendar" class="w-4 h-4"></i>
                                     <span>Aug 2022 - Feb 2023</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more project cards as needed -->
+                        <div class="card rounded-lg p-6">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="p-2 bg-white/5 rounded-md">
+                                    <i data-feather="layers" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-medium">BroBot Discord Bot</h3>
+                                    <p class="text-sm text-gray-400">A utility discord bot coded in discord.py
+                                        responding to various commands and makes use of several open APIs</p>
+                                </div>
+                            </div>
+                            <div class="space-y-2">
+                                <div class="flex items-center gap-2 text-sm text-gray-400">
+                                    <i data-feather="git-branch" class="w-4 h-4"></i>
+                                    <span>Discord.py Python, REST APIs, JSON processing</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-sm text-gray-400">
+                                    <i data-feather="calendar" class="w-4 h-4"></i>
+                                    <span>Oct 2022</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more project cards as needed -->
+                        <div class="card rounded-lg p-6">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="p-2 bg-white/5 rounded-md">
+                                    <i data-feather="layers" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-medium">Chain Reaction</h3>
+                                    <p class="text-sm text-gray-400">Domination strategy game for 2-8 players based on
+                                        atomic reactions</p>
+                                </div>
+                            </div>
+                            <div class="space-y-2">
+                                <div class="flex items-center gap-2 text-sm text-gray-400">
+                                    <i data-feather="git-branch" class="w-4 h-4"></i>
+                                    <span>Pygame Python</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-sm text-gray-400">
+                                    <i data-feather="calendar" class="w-4 h-4"></i>
+                                    <span>May 2022</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Add more project cards as needed -->
+                        <div class="card rounded-lg p-6">
+                            <div class="flex items-center gap-4 mb-4">
+                                <div class="p-2 bg-white/5 rounded-md">
+                                    <i data-feather="layers" class="w-5 h-5"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-medium">OpenCV Ticket Program</h3>
+                                    <p class="text-sm text-gray-400">Parking management project which generates and
+                                        scans barcode parking ticket with user-friendly Tkinter program GUI</p>
+                                </div>
+                            </div>
+                            <div class="space-y-2">
+                                <div class="flex items-center gap-2 text-sm text-gray-400">
+                                    <i data-feather="git-branch" class="w-4 h-4"></i>
+                                    <span>Cv2 Pyzbar Tkinter</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-sm text-gray-400">
+                                    <i data-feather="calendar" class="w-4 h-4"></i>
+                                    <span>Feb 2022</span>
                                 </div>
                             </div>
                         </div>
@@ -288,7 +358,7 @@
                             <div class="space-y-4">
                                 <div>
                                     <label class="text-sm font-medium text-gray-400 block mb-2">Name</label>
-                                    <input type="text"  id="name" name="name"
+                                    <input type="text" id="name" name="name"
                                         class="w-full px-4 py-2 rounded-md bg-white/5 border border-white/10 text-white focus:outline-none focus:ring-2 focus:ring-white/20"
                                         required>
                                 </div>
@@ -314,22 +384,22 @@
                     </div>
                 </div>
             </section>
-                            <script>
-                                function sendEmail() {
-                                    let name = encodeURIComponent(document.getElementById('name').value);
-                                    let email = encodeURIComponent(document.getElementById('email').value);
-                                    let message = encodeURIComponent(document.getElementById('message').value);
-                                    console.log(document.getElementById('name').value);
-                                    console.log(document.getElementById('email').value); 
-                                    console.log(document.getElementById('message').value);
-                                    let subject = `Message from ${name}`;
-                                    let body = `Name: ${name}%0AEmail: ${email}%0A%0AMessage:%0A${message}`;
-                            
-                                    let mailtoLink = `https://mail.google.com/mail/u/0/?fs=1&to=rochaturvedi01@gmail.com&su=${subject}&body=${body}&tf=cm`;
-                                    console.log(mailtoLink)
-                                    window.open(mailtoLink, '_blank');
-                                }
-                            </script>
+            <script>
+                function sendEmail() {
+                    let name = encodeURIComponent(document.getElementById('name').value);
+                    let email = encodeURIComponent(document.getElementById('email').value);
+                    let message = encodeURIComponent(document.getElementById('message').value);
+                    console.log(document.getElementById('name').value);
+                    console.log(document.getElementById('email').value);
+                    console.log(document.getElementById('message').value);
+                    let subject = `Message from ${name}`;
+                    let body = `Name: ${name}%0AEmail: ${email}%0A%0AMessage:%0A${message}`;
+
+                    let mailtoLink = `https://mail.google.com/mail/u/0/?fs=1&to=rochaturvedi01@gmail.com&su=${subject}&body=${body}&tf=cm`;
+                    console.log(mailtoLink)
+                    window.open(mailtoLink, '_blank');
+                }
+            </script>
             <!-- Quick Links -->
             <section class="py-12 px-4 bg-white/[0.02]">
                 <div class="max-w-6xl mx-auto">
