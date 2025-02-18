@@ -1,0 +1,15 @@
+html,body{
+    scroll-behavior: smooth;
+}
+
+#experience{
+    scroll-margin-top: 10px;
+}
+
+#projects{
+    scroll-margin-top: 10px;
+}
+
+#contact{
+    scroll-margin-top: 10px;
+}
