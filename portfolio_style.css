@@ -1,5 +1,13 @@
 html,body{
     scroll-behavior: smooth;
+    height: 16rem;
+    background-image: radial-gradient(circle, rgb(70,70,70) 2px, #000 2px);
+    background-size: 2.5rem 2.5rem;
+    background-position: center center;
+}
+
+.card {
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
 }
 
 #experience{
