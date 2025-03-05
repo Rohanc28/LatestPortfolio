@@ -21,24 +21,40 @@
             }
         }
     </script>
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-
-        .card {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .skill-tag {
-            background: rgba(255, 255, 255, 0.05);
-        }
-    </style>
 </head>
 
 <!--Body -->
+<div class="dots-background"></div>
+<script>document.addEventListener("DOMContentLoaded", () => {
+    const container = document.createElement("div");
+    container.classList.add("dots-container");
+    document.body.prepend(container);
 
+    const numDotsX = Math.ceil(window.innerWidth / 20);
+    const numDotsY = Math.ceil(document.body.scrollHeight / 20);
+    container.style.height = document.body.scrollHeight + "px";
+
+    let dots = [];
+    
+    for (let i = 0; i < numDotsX * numDotsY; i++) {
+        let dot = document.createElement("div");
+        dot.classList.add("dot");
+        container.appendChild(dot);
+        dots.push(dot);
+    }
+
+    function blinkRandomly(dot) {
+        setTimeout(() => {
+            dot.style.opacity = Math.random() > 0.5 ? "0" : "1";
+            blinkRandomly(dot); // Recursive call to keep blinking
+        }, Math.random() * 2000 + 500); // Random interval between 500ms - 2500ms
+    }
+
+    dots.forEach(dot => blinkRandomly(dot));
+});
+
+
+</script>
 <body class="bg-black text-white min-h-screen">
 
     <!-- SVG -->
